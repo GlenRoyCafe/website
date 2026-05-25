@@ -1,0 +1,85 @@
+backend:
+  name: github
+  repo: GlenRoyCafe/website
+  branch: main
+
+# Enables local editing with: npx decap-server
+local_backend: true
+
+media_folder: "src/assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+site_url: "https://glenroycafe.co.uk"
+display_url: "https://glenroycafe.co.uk"
+logo_url: "/assets/img/logo.png"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Hero heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero text", name: "hero_text", widget: "text" }
+          - { label: "Primary button text", name: "primary_button_text", widget: "string" }
+          - { label: "Primary button URL", name: "primary_button_url", widget: "string" }
+          - { label: "Secondary button text", name: "secondary_button_text", widget: "string" }
+          - { label: "Secondary button URL", name: "secondary_button_url", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Menu"
+        name: "menu"
+        file: "src/menu.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "About"
+        name: "about"
+        file: "src/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "src/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "announcements"
+    label: "Announcements"
+    folder: "src/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "base.njk" }
+      - { label: "Permalink", name: "permalink", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Site settings"
+    files:
+      - label: "Site data"
+        name: "site"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Facebook URL", name: "facebook", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Opening status", name: "opening_status", widget: "text" }
+          - { label: "Logo path", name: "logo", widget: "string" }
+          - { label: "Logo source Drive ID", name: "logo_source_drive_id", widget: "string", required: false }
