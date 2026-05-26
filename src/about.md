@@ -8,7 +8,7 @@ description: About Glen Roy Cafe in Roy Bridge.
   <div class="container narrow">
     <p class="eyebrow">About us</p>
     <h1>A practical, welcoming cafe for Roy Bridge</h1>
-    <p class="lede">Glen Roy Cafe is being refreshed as a village cafe, small shop and community "place".</p>
+    <p class="lede">Glen Roy Cafe is being refreshed as a village cafe, small shop, and warm, practical space for locals and visitors alike.</p>
   </div>
 </section>
 
