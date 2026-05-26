@@ -52,6 +52,23 @@ collections:
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "scenery"
+    label: "Scenery gallery"
+    files:
+      - label: "Photo captions & order"
+        name: "scenery-overrides"
+        file: "src/_data/scenery-overrides.json"
+        description: "Add a row for each photo in src/scenery/ to give it a caption. Drag rows to reorder. Photos without an entry here still appear at the end of the gallery with a generic caption."
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            summary: "{{fields.caption}} ({{fields.file}})"
+            fields:
+              - { label: "Filename", name: "file", widget: "string", hint: "Exact filename from src/scenery/, e.g. IMG_1234.JPG. Case-sensitive." }
+              - { label: "Caption", name: "caption", widget: "string", required: false, hint: "Shown under the thumbnail and in the lightbox." }
+              - { label: "Alt text", name: "alt", widget: "string", required: false, hint: "Description for screen readers. Defaults to the caption if left blank." }
+
   - name: "announcements"
     label: "Announcements"
     folder: "src/news"

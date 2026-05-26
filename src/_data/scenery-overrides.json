@@ -1,0 +1,11 @@
+{
+  "photos": [
+    { "file": "DJI_20260217103511_0194_D_DxO.jpg", "caption": "Brae Lochaber from above", "alt": "Aerial view of the hills around Brae Lochaber" },
+    { "file": "DJI_20260306115201_0021_D.JPG", "caption": "Spring light over the glen", "alt": "Aerial photograph looking down the glen in spring light" },
+    { "file": "DJI_20260309113939_0005_D_DxO.jpg", "caption": "Looking up Glen Roy", "alt": "Aerial view looking up Glen Roy toward the parallel roads" },
+    { "file": "DSC_7177_DxO.jpg", "caption": "Local scenery near Roy Bridge", "alt": "Highland landscape near Roy Bridge" },
+    { "file": "IMG_1205.JPG", "caption": "Lochaber afternoon", "alt": "Afternoon light over the Lochaber hills" },
+    { "file": "IMG_1245.JPG", "caption": "On the road to Roy Bridge", "alt": "Road view leading toward Roy Bridge village" },
+    { "file": "IMG_1353.JPG", "caption": "The hills above the cafe", "alt": "Hillside above Glen Roy Cafe" }
+  ]
+}
