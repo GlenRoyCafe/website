@@ -3,7 +3,7 @@ layout: base.njk
 title: Home
 description: Glen Roy Cafe in Roy Bridge — coffee, tea, baking, sandwiches, local staples and a warm welcome.
 hero_heading: Your village cafe in Roy Bridge
-hero_text: Fresh coffee, proper tea, home baking, sandwiches, useful staples and a warm welcome in the heart of Lochaber.
+hero_text: Fresh coffee, proper tea, home baking, sandwiches, useful staples and a warm welcome in Brae Lochaber.
 primary_button_text: See the draft menu
 primary_button_url: /menu/
 secondary_button_text: Get in touch
