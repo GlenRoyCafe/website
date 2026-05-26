@@ -38,18 +38,29 @@
   <div class="container contact-grid">
     <div class="panel">
       <h2>Contact details</h2>
-      <p><strong>Email:</strong> <a href="mailto:enquiries@glenroycafe.co.uk">enquiries@glenroycafe.co.uk</a></p>
       <p><strong>Location:</strong> Roy Bridge, Lochaber, Scottish Highlands</p>
       <p><strong>Facebook:</strong> <a href="https://www.facebook.com/glenroycafe">Glen Roy Cafe on Facebook</a></p>
+      <p class="form-note" style="margin-top: 1.5rem;">For opening updates, specials, and local notices, follow our Facebook page.</p>
     </div>
-    <form class="contact-form" name="contact" method="POST" action="/contact/success/" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact">
-      <label>Name <input name="name" autocomplete="name" required></label>
-      <label>Email <input type="email" name="email" autocomplete="email" required></label>
-      <label>Message <textarea name="message" rows="6" required></textarea></label>
-      <button class="button primary" type="submit">Send message</button>
-      <p class="form-note">This form is Netlify-compatible. For Cloudflare Pages, connect a form provider or replace this with a mailto link.</p>
-    </form>
+    <div class="panel" style="display: flex; flex-direction: column; gap: 1.5rem; border-left: 4px solid var(--color-green);">
+      <h2>Email us</h2>
+      <p class="lede" style="font-size: 1.1rem; margin: 0;">The best way to reach us is by email. We check our inbox daily and will get back to you as soon as possible.</p>
+      <div style="background: var(--color-cream); padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; border: 1px solid var(--border);">
+        <span style="font-size: 2rem; color: var(--color-green);">✉</span>
+        <a href="mailto:enquiries@glenroycafe.co.uk" style="font-size: 1.4rem; font-family: var(--font-serif); font-weight: bold; color: var(--color-green-dark); text-decoration: none; word-break: break-all;">enquiries@glenroycafe.co.uk</a>
+        <a href="mailto:enquiries@glenroycafe.co.uk" class="button primary" style="width: 100%; max-width: 280px; margin-top: 0.5rem; text-decoration: none;">
+          Send Email Direct
+        </a>
+      </div>
+      <div style="font-size: 0.95rem; color: var(--color-muted);">
+        <p style="margin: 0 0 0.5rem 0; font-weight: 700;">Useful details to include:</p>
+        <ul style="margin: 0; padding-left: 1.2rem;">
+          <li>Your name and contact phone number</li>
+          <li>A clear subject line (e.g., "Supplier Enquiry" or "Event Booking")</li>
+          <li>As much detail as possible to help us respond quickly</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
