@@ -16,8 +16,8 @@ description: About Glen Roy Cafe in Roy Bridge.
   <div class="container split">
     <div>
       <h2>What we are trying to build</h2>
-      <p>The goal is not to overcomplicate the place. The cafe should be reliable, friendly and useful: good drinks, straightforward food, local staples and a space that people are glad exists.</p>
-      <p>We are also hoping to offer occasional evening events, music and community use where it feels right.</p>
+      <p>The goal is not to overcomplicate things. The cafe should be reliable, friendly and useful: good drinks, straightforward food, local staples, and a space that people are glad exists.</p>
+      <p>We are also hoping to offer occasional evening events, music, and community use where it feels right.</p>
     </div>
     <div class="panel">
       <h3>Our priorities</h3>

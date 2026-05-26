@@ -7,8 +7,8 @@ description: Draft Glen Roy Cafe menu.
 <section class="page-hero">
   <div class="container narrow">
     <p class="eyebrow">Draft menu</p>
-    <h1>Simple, useful and good</h1>
-    <p class="lede">This is starter content for Decap CMS. Edit prices, availability and sections as the operating model settles.</p>
+    <h1>Simple, useful, and good</h1>
+    <p class="lede"></p>
   </div>
 </section>
 
