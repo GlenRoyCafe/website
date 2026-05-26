@@ -2,9 +2,12 @@
 // overrides + custom ordering from src/_data/scenery-overrides.json.
 //
 // To add a new photo: drop it into src/scenery/. It appears in the gallery
-// automatically, sorted at the end with a generic caption. To customise the
-// caption/alt or change the order, edit Scenery → Photo captions & order in
-// the admin (or edit src/_data/scenery-overrides.json directly).
+// automatically, sorted at the end with a generic caption.
+//
+// To customise the caption/alt or change the order: edit
+// src/_data/scenery-overrides.json. The "photos" array determines the
+// display order. Each entry needs at minimum a "file" matching the exact
+// filename in src/scenery/ (case-sensitive). Caption and alt are optional.
 
 const fs = require("fs");
 const path = require("path");

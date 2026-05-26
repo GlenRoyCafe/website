@@ -29,9 +29,6 @@ async function sceneryItemShortcode(src, alt, caption, index) {
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "admin": "admin" });
-  // Serve scenery originals at a stable URL so Decap can render image previews.
-  // The public gallery uses optimised variants from /assets/img/scenery/ instead.
-  eleventyConfig.addPassthroughCopy({ "src/scenery": "scenery-original" });
   eleventyConfig.addFilter("readableDate", function(value) {
     return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(value);
   });

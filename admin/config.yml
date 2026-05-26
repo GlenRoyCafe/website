@@ -52,28 +52,6 @@ collections:
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "scenery"
-    label: "Scenery gallery"
-    files:
-      - label: "Photo captions & order"
-        name: "scenery-overrides"
-        file: "src/_data/scenery-overrides.json"
-        description: "Add a row for each photo in src/scenery/ to give it a caption. Drag rows to reorder. Photos without an entry here still appear at the end of the gallery with a generic caption."
-        fields:
-          - label: "Photos"
-            name: "photos"
-            widget: "list"
-            summary: "{{fields.caption}}"
-            fields:
-              - label: "Photo"
-                name: "file"
-                widget: "image"
-                media_folder: "/src/scenery"
-                public_folder: "/scenery-original"
-                hint: "Pick from the scenery folder, or upload a new one — uploads land in src/scenery/ and join the gallery automatically."
-              - { label: "Caption", name: "caption", widget: "string", required: false, hint: "Shown under the thumbnail and in the lightbox." }
-              - { label: "Alt text", name: "alt", widget: "string", required: false, hint: "Description for screen readers. Defaults to the caption if left blank." }
-
   - name: "announcements"
     label: "Announcements"
     folder: "src/news"
