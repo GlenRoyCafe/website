@@ -63,9 +63,14 @@ collections:
           - label: "Photos"
             name: "photos"
             widget: "list"
-            summary: "{{fields.caption}} ({{fields.file}})"
+            summary: "{{fields.caption}}"
             fields:
-              - { label: "Filename", name: "file", widget: "string", hint: "Exact filename from src/scenery/, e.g. IMG_1234.JPG. Case-sensitive." }
+              - label: "Photo"
+                name: "file"
+                widget: "image"
+                media_folder: "/src/scenery"
+                public_folder: "/src/scenery"
+                hint: "Pick from the scenery folder, or upload a new one — uploads land in src/scenery/ and join the gallery automatically."
               - { label: "Caption", name: "caption", widget: "string", required: false, hint: "Shown under the thumbnail and in the lightbox." }
               - { label: "Alt text", name: "alt", widget: "string", required: false, hint: "Description for screen readers. Defaults to the caption if left blank." }
 
