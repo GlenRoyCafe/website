@@ -11,7 +11,7 @@ public_folder: "/assets/img/uploads"
 
 site_url: "https://glenroycafe.co.uk"
 display_url: "https://glenroycafe.co.uk"
-logo_url: "/assets/img/glen_roy_cafe_logo_700px_transparent.gif"
+logo_url: "/assets/img/transparent_logo.gif"
 
 collections:
   - name: "pages"
