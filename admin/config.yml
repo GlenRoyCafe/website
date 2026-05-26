@@ -69,7 +69,7 @@ collections:
                 name: "file"
                 widget: "image"
                 media_folder: "/src/scenery"
-                public_folder: "/src/scenery"
+                public_folder: "/scenery-original"
                 hint: "Pick from the scenery folder, or upload a new one — uploads land in src/scenery/ and join the gallery automatically."
               - { label: "Caption", name: "caption", widget: "string", required: false, hint: "Shown under the thumbnail and in the lightbox." }
               - { label: "Alt text", name: "alt", widget: "string", required: false, hint: "Description for screen readers. Defaults to the caption if left blank." }
