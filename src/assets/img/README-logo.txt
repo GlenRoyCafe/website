@@ -1,3 +1,3 @@
-Put the supplied logo here as logo.png.
-Expected path: src/assets/img/logo.png
+Put the supplied logo here as logo.gif.
+Expected path: src/assets/img/logo.gif
 Source Drive ID: 1BGppbuXmqTsnkdEwKfUBiPKfcigdeQBa

@@ -29,7 +29,7 @@ Then browse to `/admin/`.
 The site expects the cafe logo at:
 
 ```text
-src/assets/img/logo.png
+src/assets/img/logo.gif
 ```
 
 Source file from Google Drive:
@@ -39,7 +39,7 @@ Glen Roy Cafe Circle - Large - V1 - Final.png
 Drive ID: 1BGppbuXmqTsnkdEwKfUBiPKfcigdeQBa
 ```
 
-I could read the Drive metadata but this environment could not download the binary asset into the zip. Download the PNG from Drive and place it at `src/assets/img/logo.png`.
+I could read the Drive metadata but this environment could not download the binary asset into the zip. Download the PNG from Drive and place it at `src/assets/img/logo.gif`.
 
 ## Styling
 
