@@ -64,7 +64,7 @@ secondary_button_url: /contact/
         <li>Refreshed opening hours</li>
         <li>Improved cafe layout and service flow</li>
         <li>Local feedback and an open house</li>
-        <li>Evening events where they make sense</li>
+        <li>Occasional special evening events</li>
       </ul>
     </div>
   </div>
