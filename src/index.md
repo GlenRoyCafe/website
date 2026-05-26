@@ -16,20 +16,21 @@ secondary_button_url: /contact/
       <p class="eyebrow">Glen Roy Cafe · Roy Bridge</p>
       <h1>{{ hero_heading }}</h1>
       <p class="lede">{{ hero_text }}</p>
-      <p class="status-note">{{ site.opening_status }}</p>
+      <p class="status-banner">{{ site.opening_status }}</p>
       <div class="button-row">
         <a class="button primary" href="{{ primary_button_url }}">{{ primary_button_text }}</a>
         <a class="button secondary" href="{{ secondary_button_url }}">{{ secondary_button_text }}</a>
       </div>
     </div>
-    <div class="hero-card" aria-label="Cafe highlights">
+    <div class="hero-card hours-panel" aria-label="Opening hours">
       <img src="{{ site.logo }}" alt="{{ site.name }} logo" class="hero-logo">
-      <ul class="tick-list">
-        <li>Expanded, regular hours</li>
-        <li>Coffee, tea, baking, and sandwiches</li>
-        <li>A small shop for bread, milk, and essentials</li>
-        <li>Community-focused events and gatherings</li>
-      </ul>
+      <h2 style="font-size: 1.35rem; margin-bottom: 0.4rem;">Opening hours</h2>
+      <p style="color: var(--color-muted); margin: 0 0 1rem; font-size: 0.95rem;">From 15 June</p>
+      <dl class="hours-list">
+        {% for h in site.hours %}
+          <div class="hours-row{% if h.closed %} closed{% endif %}"><dt>{{ h.day }}</dt><dd>{{ h.display }}</dd></div>
+        {% endfor %}
+      </dl>
     </div>
   </div>
 </section>

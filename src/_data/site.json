@@ -7,7 +7,19 @@
   "phone": "",
   "facebook": "https://www.facebook.com/glenroycafe",
   "address": "Roy Bridge, Lochaber, Scottish Highlands",
-  "opening_status": "Closed briefly for refurbishment. Reopening planned for 15 June.",
+  "postcode": "PH31 4AE",
+  "geo": { "lat": 56.8863, "lon": -4.8338 },
+  "opening_status": "Closed for refurbishment. Reopening Monday 15 June.",
+  "reopening_date": "2026-06-15",
+  "hours": [
+    { "day": "Monday", "display": "8am – 4pm", "opens": "08:00", "closes": "16:00" },
+    { "day": "Tuesday", "display": "Closed", "closed": true },
+    { "day": "Wednesday", "display": "Closed", "closed": true },
+    { "day": "Thursday", "display": "8am – 4pm", "opens": "08:00", "closes": "16:00" },
+    { "day": "Friday", "display": "8am – 4pm", "opens": "08:00", "closes": "16:00" },
+    { "day": "Saturday", "display": "8am – 4pm", "opens": "08:00", "closes": "16:00" },
+    { "day": "Sunday", "display": "8am – 4pm", "opens": "08:00", "closes": "16:00" }
+  ],
   "logo": "/assets/img/logo.gif",
   "logo_source_drive_id": "1BGppbuXmqTsnkdEwKfUBiPKfcigdeQBa"
 }

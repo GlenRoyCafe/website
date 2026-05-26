@@ -5,7 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ site.name }}</title>
   <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ site.logo }}">
+  <link rel="apple-touch-icon" href="{{ site.logo }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ title }} | {{ site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.logo }}">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title }} | {{ site.name }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.logo }}">
+
   <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Structured data: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "{{ site.name }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}{{ site.logo }}",
+    "email": "{{ site.email }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Roy Bridge",
+      "addressLocality": "Roy Bridge",
+      "addressRegion": "Lochaber",
+      "postalCode": "{{ site.postcode }}",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ site.geo.lat }},
+      "longitude": {{ site.geo.lon }}
+    },
+    "sameAs": ["{{ site.facebook }}"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Thursday","Friday","Saturday","Sunday"], "opens": "08:00", "closes": "16:00" }
+    ],
+    "specialOpeningHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "validFrom": "2026-01-01", "validThrough": "2026-06-14", "opens": "00:00", "closes": "00:00" }
+    ]
+  }
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF6E4WWMBC"></script>
   <script>
@@ -47,13 +102,19 @@
       </div>
       <div>
         <h2>Find us</h2>
-        <p>{{ site.address }}</p>
+        <p>{{ site.address }}<br>{{ site.postcode }}</p>
         <p style="margin-top: 0.25rem; margin-bottom: 0.75rem;"><a href="https://www.google.com/maps/search/?api=1&query=Glen+Roy+Cafe,+Roy+Bridge+PH31+4AE" target="_blank" rel="noopener noreferrer" style="color: var(--color-cream); text-decoration: underline;">Get Directions ↗</a></p>
         <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p style="margin-top: 0.75rem;"><a href="{{ site.facebook }}">Follow us on Facebook</a> for opening updates and specials.</p>
       </div>
       <div>
-        <h2>Updates</h2>
-        <p>Follow us on <a href="{{ site.facebook }}">Facebook</a> for opening updates, specials and local notices.</p>
+        <h2>Opening hours</h2>
+        <p style="font-style: italic; margin-bottom: 0.75rem;">{{ site.opening_status }}</p>
+        <dl class="hours-list">
+          {% for h in site.hours %}
+            <div class="hours-row"><dt>{{ h.day }}</dt><dd>{{ h.display }}</dd></div>
+          {% endfor %}
+        </dl>
       </div>
     </div>
   </footer>
