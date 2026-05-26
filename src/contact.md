@@ -20,7 +20,7 @@ description: Contact Glen Roy Cafe.
       <p><strong>Location:</strong> {{ site.address }}</p>
       <p><strong>Facebook:</strong> <a href="{{ site.facebook }}">Glen Roy Cafe on Facebook</a></p>
     </div>
-    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+    <form class="contact-form" name="contact" method="POST" action="/contact/success/" data-netlify="true">
       <input type="hidden" name="form-name" value="contact">
       <label>Name <input name="name" autocomplete="name" required></label>
       <label>Email <input type="email" name="email" autocomplete="email" required></label>
