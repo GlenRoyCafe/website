@@ -43,7 +43,7 @@ secondary_button_url: /contact/
     </article>
     <article class="card">
       <h2>Lunch & quick bites</h2>
-      <p>Sandwiches, toasties, soup when practical, and hot cabinet options without trying to become a full restaurant.</p>
+      <p>Sandwiches, toasties, soup, and hot cabinet options without trying to become a full restaurant.</p>
     </article>
     <article class="card">
       <h2>Useful local staples</h2>
