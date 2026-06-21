@@ -9,6 +9,7 @@
   "address": "Roy Bridge, Lochaber, Scottish Highlands",
   "postcode": "PH31 4AE",
   "geo": { "lat": 56.8863, "lon": -4.8338 },
+  "opening_status": "We are operating to our regular schedule!",
   
   "hours": [
     { "day": "Monday", "display": "8am – 4pm", "opens": "08:00", "closes": "16:00" },
