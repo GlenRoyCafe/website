@@ -8,7 +8,7 @@ description: A few photos from around Glen Roy, Roy Bridge and Brae Lochaber.
   <div class="container narrow">
     <p class="eyebrow">Around the cafe</p>
     <h1>A glimpse of Brae Lochaber</h1>
-    <p class="lede">Wondering where we're located?  Here ere are a few favourite views from the glens and hills around Roy Bridge.</p>
+    <p class="lede">Wondering where we're located?  Here are are a few favourite views from the glens and hills around Roy Bridge.</p>
   </div>
 </section>
 
